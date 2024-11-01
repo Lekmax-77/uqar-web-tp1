@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
+  <title>Inscription</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    Inscription
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="register.html" class="active">Inscription</a></li>
+        <li><a href="about_event.html">À propos</a></li>
+        <li><a href="cast.html">Intervenants</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="sponsorship.html">Sponsors</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main-content">
+    <section class="register">
+      <h1>Inscription à l'événement</h1>
+      <form action="#" method="POST" class="register-form">
+        <div class="fieldsets">
+          <div class="fieldset-col">
+            <fieldset>
+              <legend>Informations personnelles</legend>
+              <label for="firstname">Prénom :</label>
+              <input type="text" id="firstname" name="firstname" required>
+
+              <label for="lastname">Nom :</label>
+              <input type="text" id="lastname" name="lastname" required>
+
+              <label for="phone">Téléphone :</label>
+              <input type="tel" id="phone" name="phone" required>
+
+              <label for="email">Adresse courriel :</label>
+              <input type="email" id="email" name="email" required>
+            </fieldset>
+          </div>
+
+          <div class="fieldset-col">
+            <fieldset>
+              <legend>Informations professionnelles</legend>
+              <label for="organization">Organisation :</label>
+              <input type="text" id="organization" name="organization" required>
+
+              <label for="job-title">Titre du poste :</label>
+              <input type="text" id="job-title" name="job-title">
+
+              <label for="sector">Secteur d'activité :</label>
+              <input type="text" id="sector" name="sector">
+            </fieldset>
+
+          </div>
+          <div class="fieldset-col">
+            <fieldset>
+              <legend>Billet et paiement</legend>
+              <label for="ticket">Type de billet :</label>
+              <select id="ticket" name="ticket" required>
+                <option value="etudiant">Étudiant - 25€</option>
+                <option value="standard" selected>Standard - 50€</option>
+                <option value="vip">VIP - 100€</option>
+              </select>
+
+              <label for="promo-code">Code promo (optionnel) :</label>
+              <input type="text" id="promo-code" name="promo-code">
+
+              <label for="payment">Mode de paiement :</label>
+              <select id="payment" name="payment" required>
+                <option value="credit-card">Carte de crédit</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Virement bancaire</option>
+              </select>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-btns">
+          <button type="reset" class="btn-reset">Réinitialiser</button>
+          <button type="submit" class="btn-submit">S'inscrire</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2024 Événement Histoire et Patrimoine</p>
+  </footer>
 </body>
+
 </html>
